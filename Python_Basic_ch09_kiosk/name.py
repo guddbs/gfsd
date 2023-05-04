@@ -19,9 +19,9 @@ burger_name = {1: "몬스터와퍼", 2: "빅맥", 3: "싸이버거"}
 side_name = {1: "감자튀김", 2: "치즈스틱", 3: "치킨너겟"}
 drink_name = {1: "사이다", 2: "콜라", 3: "환타"}
 
-burger_price = {1: "7000", 2: "5000", 3: "4000"}
-side_price = {1: "2000", 2: "1500", 3: "2000"}
-drink_price = {1: "1500", 2: "1500", 3: "1000"}
+burger_price = {1: 7000, 2: 5000, 3: 4000}
+side_price = {1: 2000, 2: 1500, 3: 2000}
+drink_price = {1: 1500, 2: 1500, 3: 1000}
 
 ##################
 # 2. 주문 내역 저장 #
@@ -97,7 +97,7 @@ elif menu_num == 4:  # 음료
 # Total 주문 금액 계산
 total_price = 0  # 총 주문 금액
 for price in price_save.values():
-    total_price += int(price)
+    total_price += price
 
 print("■" * 50)
 print("■■ 고객님이 주문하긴 메뉴는")
